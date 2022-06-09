@@ -6,29 +6,19 @@ namespace Trendyol
 {
     class Product
     {
-        
-        public Product()
-        {
-            this.Items = new List<string>();
-            //this.Id = new List<int>();
-        }
         public int Id { get; set; }
+        public string title { get; set; }
         public decimal Price { get; set; }
         public string Type { get; set; } //meiset, paltar, erzaq ve s.
         public string Description { get; set; }
-        public List<string> Items { get; set; } //uzerinde pulsuz ne verilir ve ya oz hissesi hansilardi (meselen plansetlerde qelem verile biler)
-        public string EmployeeID { get; set; }
-        public Employee Employee { get; set; }
+        public string Items { get; set; } //uzerinde pulsuz ne verilir ve ya oz hissesi hansilardi (meselen plansetlerde qelem verile biler)
         public void edit_Description(string new_Description)
         {
         }
-        public void add_Items(string new_Item)
+        public override string ToString()
+
         {
-            this.Items.Add(new_Item);
+            return $"Id -- {Id} + title -- {title} + Price -- {Price} + Type -- {Type} + Description --{Description} + Items on your product {this.Items}".ToString();
         }
-        //public void add_Product(int new_Id)
-        //{
-        //    this.Id.Add(new_Id);
-        //}
-    }   
+    }
 }

@@ -39,7 +39,7 @@ namespace Trendyol
             StringBuilder info = new StringBuilder();
             info.Append("Name" +" " +this.Name + "\n");
             info.Append("Surname" + " " + this.Surname + "\n");
-            info.Append("Father's name" + " " + this.Name + "\n");
+            info.Append("Father's name" + " " + this.Patronymic + "\n");
             info.Append("Email" + " " + this.Email + "\n");
             info.Append("Password" + " " + this.Password + "\n");
             for (int i = 0; i < this.Address.Count; i++)
